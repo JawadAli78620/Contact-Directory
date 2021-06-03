@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContactDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/Detail_backArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_back_24dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:id="@+id/addUser_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/details_box_style"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="30dp"
+            android:orientation="vertical">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/details_Iv"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_camera_alt_24dp"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="2dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="0dp"
+                app:civ_shadow_color="@color/colorPrimaryDark"
+                android:layout_gravity="center"/>
+            />
+
+
+
+            <TextView
+                android:id="@+id/details_name_Tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Jawad Ali"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:paddingTop="3dp"
+                android:paddingBottom="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000">
+
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="0dp"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/details_phone_Tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="03354487455"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="0dp"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/details_email_Tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="jawadmughal490@gmail.com"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="0dp"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/details_address_Tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Fast University, Islamabad"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

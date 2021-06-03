@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SendMessage">
+
+    <RelativeLayout
+        android:id="@+id/recipient_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="bottom">
+
+            <AutoCompleteTextView
+                android:id="@+id/msg_recipient_Et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_centerHorizontal="true"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:drawableEnd="@drawable/ic_person_gray_24dp"
+                android:hint="Enter Recipient"
+                android:completionThreshold="1"
+                android:background="@drawable/details_box_style" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/chat_RL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:background="@color/white"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="#e6e6e6"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/msg_send_Et"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp"
+                android:hint="Type a message"
+                android:background="@drawable/details_box_style"/>
+
+            <ImageView
+                android:id="@+id/msg_sendIconIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_send_white_24dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

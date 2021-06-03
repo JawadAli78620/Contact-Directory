@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="#f1f1f1"
+    android:orientation="horizontal">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/item_profileIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_camera_alt_24dp"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="2dp"
+        app:civ_shadow="true"
+        android:layout_centerHorizontal="true"
+        app:civ_shadow_radius="0dp"
+        app:civ_shadow_color="@color/colorPrimaryDark"
+        android:layout_gravity="center"/>
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="13dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Jawad Ali"/>
+
+        <TextView
+            android:id="@+id/item_phoneTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="03354487455"/>
+    </LinearLayout>
+
+</LinearLayout>
